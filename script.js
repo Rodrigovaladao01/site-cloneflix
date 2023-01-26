@@ -3,7 +3,7 @@ function handler(e) {
     let movie = document.querySelector('.form__input').value;
 
     if (movie) {
-        const _url = `http://www.omdbapi.com/?s=${movie}&apikey=fc83b2cb&`;
+        const _url = `http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.API_KEY}&t=${search}`;
         const _options = {
             method: 'Get',
             mode: 'cors',
