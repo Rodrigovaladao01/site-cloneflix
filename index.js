@@ -11,7 +11,7 @@ app.post('/search', async (req, res) => {
   const { movie } = req.body
 
   // make the API call
-  const _url = `http://www.omdbapi.com/?i=tt3896198&apikey=fc83b2cb&t=${movie}`;
+  const _url = `http://www.omdbapi.com/?i=tt3896198&apikey=${ApiKey}&t=${movie}`;
   const _options = {
     method: 'Get',
     mode: 'cors',
